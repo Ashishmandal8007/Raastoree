@@ -1,5 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
+
+// --- IMPORT LOCAL IMAGES HERE ---
+// Make sure these filenames match exactly what is in your assets folder
+import foodImg from './assets/food.jpg';
+import food2Img from './assets/food2.jpg';
+import shopInteriorImg from './assets/shopinterior.jpg';
+import shopInterior2Img from './assets/shopinterrior2.jpg';
+import tableImg from './assets/table.jpg';
+import table2Img from './assets/table2.jpg';
+
 const RestaurantWebsite = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [activeMenuCategory, setActiveMenuCategory] = useState('food');
@@ -248,7 +258,7 @@ const RestaurantWebsite = () => {
                   <div className="bg-gradient-to-b from-amber-50 to-orange-100 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow border border-amber-200">
                     <div className="h-48 overflow-hidden">
                       <img 
-                        src="images/shopinterior.jpg"
+                        src={shopInteriorImg} // CHANGED: Use imported variable
                         alt="Restaurant Ambience"
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
@@ -262,7 +272,7 @@ const RestaurantWebsite = () => {
                   <div className="bg-gradient-to-b from-amber-50 to-orange-100 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow border border-amber-200">
                     <div className="h-48 overflow-hidden">
                       <img 
-                        src="images/food.jpg"
+                        src={foodImg} // CHANGED: Use imported variable
                         alt="Delicious Food"
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
@@ -276,7 +286,7 @@ const RestaurantWebsite = () => {
                   <div className="bg-gradient-to-b from-amber-50 to-orange-100 rounded-2xl overflow-hidden shadow-2xl hover:shadow-3xl transition-shadow border border-amber-200">
                     <div className="h-48 overflow-hidden">
                       <img 
-                        src="images/table2.jpg"
+                        src={table2Img} // CHANGED: Use imported variable
                         alt="Happy Customers"
                         className="w-full h-full object-cover hover:scale-110 transition-transform duration-300"
                       />
@@ -321,7 +331,7 @@ const RestaurantWebsite = () => {
                     </div>
                     <div className="relative">
                       <img 
-                        src="images/food2.jpg"
+                        src={food2Img} // CHANGED: Use imported variable
                         alt="Special Dish"
                         className="rounded-2xl shadow-xl"
                       />
