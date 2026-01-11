@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './app.css';
+import './App.css';
 const RestaurantWebsite = () => {
   const [activeSection, setActiveSection] = useState('home');
   const [activeMenuCategory, setActiveMenuCategory] = useState('food');
